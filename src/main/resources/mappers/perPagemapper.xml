@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+
+    PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.soundcloud.perPage.perPagemapper">
+	<select id="getsongs">
+
+		select
+
+		song_no, user_name, song_name, theme,
+		reg_date, play_list, view
+
+		from
+
+		songs
+
+	</select>
+
+	<insert id="insertsong">
+
+		insert into songs(song_no, usesr_name, song_name, song, song_pic, theme,
+		reg_date, play_list)
+
+		value(
+		#{song_no},
+		#{user_name},
+		#{song_name},
+		#{song},
+		#{song_pic},
+		#{theme},
+		now(),
+		#{play_list}
+		)
+
+	</insert>
+
+
+</mapper>
