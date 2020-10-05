@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      /* ============ desktop view ============ */
+      @media all and (min-width: 992px) {
+        .navbar .nav-item .dropdown-menu {
+          display: none;
+        }
+        .navbar .nav-item:hover .nav-link {
+          color: #fff;
+        }
+        .navbar .nav-item:hover .dropdown-menu {
+          display: block;
+        }
+        .navbar .nav-item .dropdown-menu {
+          margin-top: 0;
+        }
+      }
+      .container .navbar-nav {
+        display: flex;
+        align-content: space-between;
+      }
+      .forSize {
+        width: 100%;
+        height: 250px;
+        border: 1px black solid;
+      }
+      
+      .span4 {
+      	list-style:none;
+      }
+
+      /* ============ desktop view .end// ============ */
+    </style>
+
+    <title>Twitch</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item-text" href="#"
+                >로고랑 텍스트밑 @아이디넣기 로고랑 텍스트밑 @아이디넣기</a
+              >
+            </div>
+          </li>
+
+
+
+		 <!-- <li class="col-xs-6" style="background-color:white-space; text-align:center; display:inline-block;"> -->
+         	<img src="image/EINSPANNER.jpg" class="img-responsive center-block" alt="" width="100" height="150" style= "margin-top:2px" >
+       <!--   </li> -->
+         
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+
+
+
+			<div class="container">
+			<ul class="thumbnails">
+			  <li class="span4">
+			    <div class="thumbnail" style="background-color:white-space; text-align:center; display:inline-block;">
+			       <img src="image/EINSPANNER.jpg" class="img-responsive center-block" alt="사진안나오네" width="300" height="500" style= "margin-top:2px">
+			    </div>
+			  </li>
+			</ul>
+			</div>
+  </body>
+</html>
