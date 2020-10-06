@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
                 	
     
+=======
+<<<<<<< HEAD
+    	
+    <wb-module deploy-name="mainpage-1.0.0-BUILD-SNAPSHOT">
+                
+=======
+            	
+>>>>>>> 5b2c9c79b085690305553ad9a8ec936fd2992db9
     
     
     <wb-module deploy-name="mainpage-1.0.0-BUILD-SNAPSHOT">
@@ -8,6 +17,7 @@
         
         
         
+>>>>>>> project/이창민
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
                                 		
         
@@ -24,15 +34,32 @@
         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+<<<<<<< HEAD
                                 		
         
+=======
+<<<<<<< HEAD
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+        		
+        <property name="java-output-path" value="target/classes"/>
+        <property name="context-root" value="mainpage"/>
+        	
+    </wb-module>
+=======
+                        		
+>>>>>>> 5b2c9c79b085690305553ad9a8ec936fd2992db9
         
         
         <property name="java-output-path" value="target/classes"/>
                 
         <property name="context-root" value="mainpage"/>
+<<<<<<< HEAD
                                 	
     
+=======
+                        	
+>>>>>>> project/이창민
+>>>>>>> 5b2c9c79b085690305553ad9a8ec936fd2992db9
     
     
     </wb-module>
