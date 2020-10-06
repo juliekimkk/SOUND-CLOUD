@@ -46,6 +46,8 @@ $(function () { objectFitImages() });
 </nav>
 
 
+
+
 <nav>
 			<div class="container">
 				<div id="gallery" class="carousel slide" data-ride="carousel">
