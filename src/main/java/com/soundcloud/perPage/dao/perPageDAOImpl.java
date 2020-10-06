@@ -36,12 +36,12 @@ public class perPageDAOImpl implements perPageDAO {
 	@Override
 	public int updatesong(perPageVO pagevo) throws Exception {
 
-		return sqlSession.update("com.soundcloud.perPage.perPagemapper.deletesong", pagevo);
+		return sqlSession.update("com.soundcloud.perPage.perPagemapper.updatesong", pagevo);
 	}
 
 	@Override
 	public int viewcnt(int song_no) throws Exception {
 
-		return sqlSession.update("com.soundcloud.perPage.perPagemapper.deletesong", song_no);
+		return sqlSession.update("com.soundcloud.perPage.perPagemapper.viewcnt", song_no);
 	}
 }
