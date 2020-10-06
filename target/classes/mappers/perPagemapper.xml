@@ -9,12 +9,14 @@
 
 
 <mapper namespace="com.soundcloud.perPage.perPagemapper">
-	<select id="getsongs">
+	<select id="getsongs"
+		resultType="com.soundcloud.perPage.domain.perPageVO">
 
 		select
 
 		song_no, user_name, song_name, theme,
-		reg_date, play_list, view
+		reg_date,
+		play_list, view
 
 		from
 
@@ -22,23 +24,58 @@
 
 	</select>
 
-	<insert id="insertsong">
+	<insert id="insertsong"
+		parameterType="com.soundcloud.perPage.domain.perPageVO">
 
-		insert into songs(song_no, usesr_name, song_name, song, song_pic, theme,
-		reg_date, play_list)
+		insert into songs(user_name, song_name, song,
+		song_pic,
+		theme, play_list)
 
 		value(
-		#{song_no},
 		#{user_name},
 		#{song_name},
 		#{song},
 		#{song_pic},
 		#{theme},
-		now(),
 		#{play_list}
 		)
 
 	</insert>
 
+	<delete id="deletesong" parameterType="int">
+
+		delete from songs
+
+		where
+		song_no = #{song_no}
+
+	</delete>
+
+	<update id="updatesong"
+		parameterType="com.soundcloud.perPage.domain.perPageVO">
+
+		update songs set
+
+		song name = #{song_name},
+
+		theme =
+		#{theme},
+
+		play_list = #{play_list}
+
+		where song_no = #{song_no}
+
+	</update>
+
+	<update id="viewcnt"
+		parameterType="com.soundcloud.perPage.domain.perPageVO">
+
+		update songs set
+
+		view = view + 1
+
+		where song_no = #{song_no}
+
+	</update>
 
 </mapper>

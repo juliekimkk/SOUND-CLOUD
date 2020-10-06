@@ -1,12 +1,14 @@
 package com.soundcloud.perPage.domain;
 
+import java.io.File;
+
 public class perPageVO {
 
 	private int song_no;
 	private String user_name;
 	private String song_name;
-	private String song;
-	private String song_pic;
+	private byte[] song;
+	private byte[] song_pic;
 	private String theme;
 	private String reg_date;
 	private String play_list;
@@ -36,19 +38,19 @@ public class perPageVO {
 		this.song_name = song_name;
 	}
 
-	public String getSong() {
+	public byte[] getSong() {
 		return song;
 	}
 
-	public void setSong(String song) {
+	public void setSong(byte[] song) {
 		this.song = song;
 	}
 
-	public String getSong_pic() {
+	public byte[] getSong_pic() {
 		return song_pic;
 	}
 
-	public void setSong_pic(String song_pic) {
+	public void setSong_pic(byte[] song_pic) {
 		this.song_pic = song_pic;
 	}
 
