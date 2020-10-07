@@ -14,9 +14,7 @@
 
 		select
 
-		song_no, user_name, song_name, theme,
-		reg_date,
-		play_list, view
+		*
 
 		from
 
