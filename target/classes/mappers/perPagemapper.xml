@@ -68,7 +68,7 @@
 	</update>
 
 	<update id="viewcnt"
-		parameterType="com.soundcloud.perPage.domain.perPageVO">
+		parameterType="int">
 
 		update songs set
 
